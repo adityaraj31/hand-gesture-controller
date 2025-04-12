@@ -72,17 +72,4 @@ self.swipe_threshold = 40   # Pixels required for swipe detection
 └───────────────┘     └───────────────┘     └───────────────┘     └───────────────┘
 ```
 
-## 🛠️ Extending
 
-Add your own gestures by:
-
-1. Define new gesture recognition logic in `_recognize_gesture()`
-2. Add handler function (e.g., `_handle_new_gesture()`)
-3. Register in the gestures dictionary:
-
-```python
-self.gestures = {
-    # Add your new gesture
-    "NEW_GESTURE": self._handle_new_gesture
-}
-```
